@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 int main()
 {
     int x = 10;
@@ -11,8 +12,8 @@ int main()
     // one another way is
     std::cout << "x = " << x;
     // this is called chaining multiple operators
-    std::cout << "y = " << y << std::endl;
-    std::cout << "y = " << y;
-
+    std::cout << "x = " << x << std::endl
+              << "y = " << y;
+    // to remove the repetition of the std we can just define using namespace std; at the top level
     return 0;
 }
